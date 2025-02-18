@@ -46,6 +46,7 @@ section {
 }
 
 .navbar a {
+    display: inline-block;
     margin: 0 1rem;
     font-size: 1.8rem;
     color: #fff;
@@ -58,14 +59,24 @@ section {
     font-size: 2rem;
 }
 
-.icons img {
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.icons i {
+    color: #fff;
+    font-size: 30px;
     margin: 1rem;
     cursor: pointer;
 }
 
-.icons img:hover {
-    width: 40px;
-    height: 40px;
+.icons i:hover {
+    font-size: 40px;
+}
+
+.hidden {
+    display: none;
 }
 
 .btn {
@@ -223,6 +234,13 @@ section {
     flex-direction: column;
 }
 
+.address .alert {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    color: #e95555;
+    text-transform: none;
+}
+
 .footer {
     text-align: center;
 }
@@ -240,4 +258,56 @@ section {
 
 .footer .share a img:hover {
     background-color: var(--main-color);
+}
+
+/* MEDIA QUERIE */
+@media (max-width: 800px) {
+    .navbar {
+        position: absolute;
+        display: none;
+    }
+
+    .navbar.open-menu {
+        display: flex;
+        flex-direction: column;
+        top: 111px;
+        width: 95%;
+        text-align: center;
+        background-color: #010103;
+    }
+
+    .navbar.open-menu a {
+        padding-bottom: 0.8rem;
+    }
+
+    .navbar.open-menu a:hover {
+        color: var(--main-color);
+        border-bottom: none;
+        padding-bottom: 0.8rem;
+        font-size: 2rem;
+    }
+
+    .hidden {
+        display: block;
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .home-container {
+        background: none;
+    }
+
+    .about .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .address iframe {
+        width: 90%;
+    }
 }
