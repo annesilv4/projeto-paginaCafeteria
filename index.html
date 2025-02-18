@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="./CSS/style.css" />
     <title>DevClub Coffee</title>
 
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,18 +45,11 @@
 
         <!-- ICONS -->
         <div class="icons">
-          <img
-            width="30"
-            height="30"
-            src="https://img.icons8.com/ios-filled/30/ffffff/search--v1.png"
-            alt="search--v1"
-          />
-          <img
-            width="30"
-            height="30"
-            src="https://img.icons8.com/ios-glyphs/30/ffffff/shopping-cart--v1.png"
-            alt="shopping-cart--v1"
-          />
+          <div id="icon-menu" class="hidden">
+            <i class="fa-solid fa-bars" id="bottom-menu"></i>
+          </div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
         </div>
         <!-- FIM ICONS -->
       </section>
@@ -322,6 +324,10 @@
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
+      <span class="alert"
+        ><i class="fa-solid fa-triangle-exclamation"></i> Este mapa é só uma
+        demonstração.</span
+      >
     </section>
     <!-- FIM ENDEREÇO -->
 
@@ -355,5 +361,9 @@
       </div>
     </section>
     <!-- FIM FOOTER -->
+
+    <!-- JAVASCRIPT -->
+    <script src="/JS/script.js"></script>
+    <!-- FIM JAVASCRIPT -->
   </body>
 </html>
