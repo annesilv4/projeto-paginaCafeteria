@@ -302,6 +302,10 @@ section {
         flex-direction: column;
     }
 
+    .about .row .container-img img {
+        width: 100%;
+    }
+
     .box-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
